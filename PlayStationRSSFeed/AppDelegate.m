@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "GAMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+
+    GAMainViewController *firstViewController = [[GAMainViewController alloc] initWithNibName:@"GAMainViewController" bundle:nil];
+    [self.window setRootViewController:firstViewController];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

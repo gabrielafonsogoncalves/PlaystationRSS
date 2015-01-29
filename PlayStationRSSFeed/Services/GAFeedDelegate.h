@@ -10,4 +10,7 @@
 
 @protocol GAFeedDelegate <NSObject>
 
+@required
+- (void)showFeeds:(NSArray *)feeds;
+
 @end

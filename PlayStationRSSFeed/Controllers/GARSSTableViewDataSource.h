@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface GARSSTableViewDataSource : NSObject
+@interface GARSSTableViewDataSource : NSObject <UITableViewDataSource>
+
+@property (strong, nonatomic) NSArray *items;
 
 @end

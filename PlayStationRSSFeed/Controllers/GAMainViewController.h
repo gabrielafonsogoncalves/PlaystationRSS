@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAFeedDelegate.h"
 
-@interface GAMainViewController : UIViewController
+@interface GAMainViewController : UIViewController <GAFeedDelegate>
+
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end

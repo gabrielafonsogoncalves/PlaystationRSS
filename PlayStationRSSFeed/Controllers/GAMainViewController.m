@@ -7,8 +7,13 @@
 //
 
 #import "GAMainViewController.h"
+#import "GARSSTableViewDataSource.h"
+#import "GAFeedService.h"
+#import "GAFeed.h"
 
 @interface GAMainViewController ()
+
+@property (strong, nonatomic) GARSSTableViewDataSource *dataSource;
 
 @end
 
@@ -16,22 +21,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.dataSource = [[GARSSTableViewDataSource alloc ] init];
+    self.tableView.dataSource = self.dataSource;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    [self loadRSSFeeds];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)loadRSSFeeds {
+    [self.activityIndicator startAnimating];
+    GAFeedService *feedService = [[GAFeedService alloc] init];
+    feedService.delegate = self;
+    [feedService fetchPlaystationFeeds];
 }
-*/
+
+#pragma mark GAFeedDelegate
+
+- (void)showFeeds:(NSArray *)feeds {
+    self.dataSource.items = feeds;
+    [self.tableView reloadData];
+    [self.activityIndicator stopAnimating];
+}
 
 @end

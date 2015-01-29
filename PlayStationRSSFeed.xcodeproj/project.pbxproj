@@ -7,11 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BF0840862654A61AA3FB434 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A93F39490E4DBD9F1DAFEF /* libPods.a */; };
+		D9ADB1821A7A11490067E689 /* GAFeedService.m in Sources */ = {isa = PBXBuildFile; fileRef = D9ADB1811A7A11490067E689 /* GAFeedService.m */; };
+		D9ADB1851A7A11E00067E689 /* GAQueueService.m in Sources */ = {isa = PBXBuildFile; fileRef = D9ADB1841A7A11E00067E689 /* GAQueueService.m */; };
 		D9AF49D61A79FEC9009BA3C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AF49D51A79FEC9009BA3C2 /* main.m */; };
 		D9AF49D91A79FEC9009BA3C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AF49D81A79FEC9009BA3C2 /* AppDelegate.m */; };
 		D9AF49DB1A79FEC9009BA3C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9AF49DA1A79FEC9009BA3C2 /* Images.xcassets */; };
 		D9AF49DE1A79FEC9009BA3C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9AF49DC1A79FEC9009BA3C2 /* LaunchScreen.xib */; };
 		D9AF49EA1A79FEC9009BA3C2 /* PlayStationRSSFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AF49E91A79FEC9009BA3C2 /* PlayStationRSSFeedTests.m */; };
+		D9AF49F71A79FF57009BA3C2 /* GAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AF49F51A79FF57009BA3C2 /* GAMainViewController.m */; };
+		D9AF49F81A79FF57009BA3C2 /* GAMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9AF49F61A79FF57009BA3C2 /* GAMainViewController.xib */; };
+		D9AF49FB1A7A002E009BA3C2 /* GARSSTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AF49FA1A7A002E009BA3C2 /* GARSSTableViewDataSource.m */; };
+		D9AF49FF1A7A00F5009BA3C2 /* GARSSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AF49FD1A7A00F5009BA3C2 /* GARSSTableViewCell.m */; };
+		D9AF4A001A7A00F5009BA3C2 /* GARSSTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9AF49FE1A7A00F5009BA3C2 /* GARSSTableViewCell.xib */; };
+		D9AF4A051A7A05BE009BA3C2 /* GAFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AF4A041A7A05BE009BA3C2 /* GAFeed.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35FB28A9DE0D4A8A8D5BA1A7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D9ADB1801A7A11490067E689 /* GAFeedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAFeedService.h; path = Services/GAFeedService.h; sourceTree = "<group>"; };
+		D9ADB1811A7A11490067E689 /* GAFeedService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAFeedService.m; path = Services/GAFeedService.m; sourceTree = "<group>"; };
+		D9ADB1831A7A11E00067E689 /* GAQueueService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAQueueService.h; path = Services/GAQueueService.h; sourceTree = "<group>"; };
+		D9ADB1841A7A11E00067E689 /* GAQueueService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAQueueService.m; path = Services/GAQueueService.m; sourceTree = "<group>"; };
+		D9ADB1861A7A12E80067E689 /* GAFeedDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAFeedDelegate.h; path = Services/GAFeedDelegate.h; sourceTree = "<group>"; };
 		D9AF49D01A79FEC9009BA3C2 /* PlayStationRSSFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayStationRSSFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9AF49D41A79FEC9009BA3C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9AF49D51A79FEC9009BA3C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,6 +50,17 @@
 		D9AF49E31A79FEC9009BA3C2 /* PlayStationRSSFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayStationRSSFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9AF49E81A79FEC9009BA3C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9AF49E91A79FEC9009BA3C2 /* PlayStationRSSFeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayStationRSSFeedTests.m; sourceTree = "<group>"; };
+		D9AF49F41A79FF57009BA3C2 /* GAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAMainViewController.h; path = Controllers/GAMainViewController.h; sourceTree = "<group>"; };
+		D9AF49F51A79FF57009BA3C2 /* GAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAMainViewController.m; path = Controllers/GAMainViewController.m; sourceTree = "<group>"; };
+		D9AF49F61A79FF57009BA3C2 /* GAMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GAMainViewController.xib; path = Controllers/GAMainViewController.xib; sourceTree = "<group>"; };
+		D9AF49F91A7A002E009BA3C2 /* GARSSTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GARSSTableViewDataSource.h; path = Controllers/GARSSTableViewDataSource.h; sourceTree = "<group>"; };
+		D9AF49FA1A7A002E009BA3C2 /* GARSSTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GARSSTableViewDataSource.m; path = Controllers/GARSSTableViewDataSource.m; sourceTree = "<group>"; };
+		D9AF49FC1A7A00F5009BA3C2 /* GARSSTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GARSSTableViewCell.h; path = Controllers/GARSSTableViewCell.h; sourceTree = "<group>"; };
+		D9AF49FD1A7A00F5009BA3C2 /* GARSSTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GARSSTableViewCell.m; path = Controllers/GARSSTableViewCell.m; sourceTree = "<group>"; };
+		D9AF49FE1A7A00F5009BA3C2 /* GARSSTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GARSSTableViewCell.xib; path = Controllers/GARSSTableViewCell.xib; sourceTree = "<group>"; };
+		D9AF4A031A7A05BE009BA3C2 /* GAFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAFeed.h; path = Model/GAFeed.h; sourceTree = "<group>"; };
+		D9AF4A041A7A05BE009BA3C2 /* GAFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAFeed.m; path = Model/GAFeed.m; sourceTree = "<group>"; };
+		E2A93F39490E4DBD9F1DAFEF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF0840862654A61AA3FB434 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,12 +82,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22481334F63F4FB2A84F62DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2A93F39490E4DBD9F1DAFEF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9ADB17F1A7A112C0067E689 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D9ADB1801A7A11490067E689 /* GAFeedService.h */,
+				D9ADB1811A7A11490067E689 /* GAFeedService.m */,
+				D9ADB1831A7A11E00067E689 /* GAQueueService.h */,
+				D9ADB1841A7A11E00067E689 /* GAQueueService.m */,
+				D9ADB1861A7A12E80067E689 /* GAFeedDelegate.h */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		D9AF49C71A79FEC9009BA3C2 = {
 			isa = PBXGroup;
 			children = (
 				D9AF49D21A79FEC9009BA3C2 /* PlayStationRSSFeed */,
 				D9AF49E61A79FEC9009BA3C2 /* PlayStationRSSFeedTests */,
 				D9AF49D11A79FEC9009BA3C2 /* Products */,
+				35FB28A9DE0D4A8A8D5BA1A7 /* Pods.xcconfig */,
+				22481334F63F4FB2A84F62DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +125,10 @@
 		D9AF49D21A79FEC9009BA3C2 /* PlayStationRSSFeed */ = {
 			isa = PBXGroup;
 			children = (
+				D9ADB17F1A7A112C0067E689 /* Services */,
+				D9AF4A021A7A05A5009BA3C2 /* Model */,
+				D9AF4A011A7A0167009BA3C2 /* Views */,
+				D9AF49F31A79FF35009BA3C2 /* Controllers */,
 				D9AF49D71A79FEC9009BA3C2 /* AppDelegate.h */,
 				D9AF49D81A79FEC9009BA3C2 /* AppDelegate.m */,
 				D9AF49DA1A79FEC9009BA3C2 /* Images.xcassets */,
@@ -111,6 +164,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D9AF49F31A79FF35009BA3C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9AF49F41A79FF57009BA3C2 /* GAMainViewController.h */,
+				D9AF49F51A79FF57009BA3C2 /* GAMainViewController.m */,
+				D9AF49F91A7A002E009BA3C2 /* GARSSTableViewDataSource.h */,
+				D9AF49FA1A7A002E009BA3C2 /* GARSSTableViewDataSource.m */,
+				D9AF49FC1A7A00F5009BA3C2 /* GARSSTableViewCell.h */,
+				D9AF49FD1A7A00F5009BA3C2 /* GARSSTableViewCell.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D9AF4A011A7A0167009BA3C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9AF49F61A79FF57009BA3C2 /* GAMainViewController.xib */,
+				D9AF49FE1A7A00F5009BA3C2 /* GARSSTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D9AF4A021A7A05A5009BA3C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9AF4A031A7A05BE009BA3C2 /* GAFeed.h */,
+				D9AF4A041A7A05BE009BA3C2 /* GAFeed.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9AF49ED1A79FEC9009BA3C2 /* Build configuration list for PBXNativeTarget "PlayStationRSSFeed" */;
 			buildPhases = (
+				953C542E369C404AA5E18F39 /* Check Pods Manifest.lock */,
 				D9AF49CC1A79FEC9009BA3C2 /* Sources */,
 				D9AF49CD1A79FEC9009BA3C2 /* Frameworks */,
 				D9AF49CE1A79FEC9009BA3C2 /* Resources */,
+				0AFDB45329FC447BAA74C03E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +279,8 @@
 			files = (
 				D9AF49DE1A79FEC9009BA3C2 /* LaunchScreen.xib in Resources */,
 				D9AF49DB1A79FEC9009BA3C2 /* Images.xcassets in Resources */,
+				D9AF4A001A7A00F5009BA3C2 /* GARSSTableViewCell.xib in Resources */,
+				D9AF49F81A79FF57009BA3C2 /* GAMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,13 +293,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AFDB45329FC447BAA74C03E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		953C542E369C404AA5E18F39 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D9AF49CC1A79FEC9009BA3C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D9AF49D91A79FEC9009BA3C2 /* AppDelegate.m in Sources */,
+				D9ADB1851A7A11E00067E689 /* GAQueueService.m in Sources */,
+				D9AF49F71A79FF57009BA3C2 /* GAMainViewController.m in Sources */,
 				D9AF49D61A79FEC9009BA3C2 /* main.m in Sources */,
+				D9AF4A051A7A05BE009BA3C2 /* GAFeed.m in Sources */,
+				D9AF49FB1A7A002E009BA3C2 /* GARSSTableViewDataSource.m in Sources */,
+				D9ADB1821A7A11490067E689 /* GAFeedService.m in Sources */,
+				D9AF49FF1A7A00F5009BA3C2 /* GARSSTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +450,7 @@
 		};
 		D9AF49EE1A79FEC9009BA3C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35FB28A9DE0D4A8A8D5BA1A7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PlayStationRSSFeed/Info.plist;
@@ -333,6 +461,7 @@
 		};
 		D9AF49EF1A79FEC9009BA3C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35FB28A9DE0D4A8A8D5BA1A7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PlayStationRSSFeed/Info.plist;
@@ -394,6 +523,7 @@
 				D9AF49EF1A79FEC9009BA3C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9AF49F01A79FEC9009BA3C2 /* Build configuration list for PBXNativeTarget "PlayStationRSSFeedTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +532,7 @@
 				D9AF49F21A79FEC9009BA3C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,4 +10,7 @@
 
 @interface GAFeed : NSObject
 
+@property (strong, nonatomic) NSString *title;
+@property (strong, nonatomic) NSString *feedContent;
+
 @end

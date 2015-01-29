@@ -10,4 +10,6 @@
 
 @interface GAQueueService : NSObject
 
++ (dispatch_queue_t)queue:(NSString*)queueName;
+
 @end

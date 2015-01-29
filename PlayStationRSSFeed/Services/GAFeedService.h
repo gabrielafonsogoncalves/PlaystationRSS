@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GAFeedDelegate.h"
 
 @interface GAFeedService : NSObject
+
+@property (strong, nonatomic) id<GAFeedDelegate> delegate;
+
+- (void)fetchPlaystationFeeds;
 
 @end
