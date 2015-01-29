@@ -12,5 +12,6 @@
 
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *feedContent;
+@property (strong, nonatomic) NSString *newsLink;
 
 @end

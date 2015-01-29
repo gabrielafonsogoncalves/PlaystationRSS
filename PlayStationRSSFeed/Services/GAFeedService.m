@@ -34,11 +34,14 @@
             for (GDataXMLElement *itemElement in items) {
                 NSArray *names = [itemElement elementsForName:@"title"];
                 NSArray *descriptions = [itemElement elementsForName:@"description"];
+                NSArray *links = [itemElement elementsForName:@"link"];
                 GDataXMLElement *name = names.firstObject;
                 GDataXMLElement *description = descriptions.firstObject;
+                GDataXMLElement *link = links.firstObject;
                 GAFeed *feed = [[GAFeed alloc] init];
                 feed.title = name.stringValue;
                 feed.feedContent = description.stringValue;
+                feed.newsLink = link.stringValue;
                 [feeds addObject:feed];
             }
         }

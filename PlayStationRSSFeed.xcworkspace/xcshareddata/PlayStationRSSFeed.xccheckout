@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>05CEEA50-0DB0-4298-BB31-28F29627CCE9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PlayStationRSSFeed</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>99AF44B6B8ED9228E5970EC25B3CD1B2C83F85F7</key>
+		<string>github.com:gabrielafonsogoncalves/PlaystationRSS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PlayStationRSSFeed.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>99AF44B6B8ED9228E5970EC25B3CD1B2C83F85F7</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:gabrielafonsogoncalves/PlaystationRSS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>99AF44B6B8ED9228E5970EC25B3CD1B2C83F85F7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>99AF44B6B8ED9228E5970EC25B3CD1B2C83F85F7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PlayStationRSSFeed</string>
+		</dict>
+	</array>
+</dict>
+</plist>

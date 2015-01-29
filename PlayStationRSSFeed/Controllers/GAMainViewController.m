@@ -8,6 +8,7 @@
 
 #import "GAMainViewController.h"
 #import "GARSSTableViewDataSource.h"
+#import "GAWebViewController.h"
 #import "GAFeedService.h"
 #import "GAFeed.h"
 
@@ -22,7 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSource = [[GARSSTableViewDataSource alloc ] init];
+    self.dataSource.delegate = self;
     self.tableView.dataSource = self.dataSource;
+    self.tableView.delegate = self.dataSource;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     [self loadRSSFeeds];
 }
@@ -44,6 +47,13 @@
     self.dataSource.items = feeds;
     [self.tableView reloadData];
     [self.activityIndicator stopAnimating];
+}
+
+- (void)openUrlRequest:(NSString *)url
+{
+    GAWebViewController *webViewController = [[GAWebViewController alloc] initWithNibName:@"GAWebViewController" bundle:nil];
+    webViewController.url = url;
+    [self presentViewController:webViewController animated:YES completion:nil];
 }
 
 @end

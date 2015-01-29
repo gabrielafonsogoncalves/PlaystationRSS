@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "GAFeedDelegate.h"
 
-@interface GARSSTableViewDataSource : NSObject <UITableViewDataSource>
+@interface GARSSTableViewDataSource : NSObject <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) NSArray *items;
+@property (strong, nonatomic) id<GAFeedDelegate> delegate;
 
 @end

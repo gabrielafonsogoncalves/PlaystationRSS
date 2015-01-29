@@ -12,5 +12,6 @@
 
 @required
 - (void)showFeeds:(NSArray *)feeds;
+- (void)openUrlRequest:(NSString *)url;
 
 @end

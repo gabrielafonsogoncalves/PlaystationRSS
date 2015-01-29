@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7BF0840862654A61AA3FB434 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A93F39490E4DBD9F1DAFEF /* libPods.a */; };
+		D90060CD1A7A5950009AB89C /* GAWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D90060CB1A7A5950009AB89C /* GAWebViewController.m */; };
+		D90060CE1A7A5950009AB89C /* GAWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90060CC1A7A5950009AB89C /* GAWebViewController.xib */; };
 		D9ADB1821A7A11490067E689 /* GAFeedService.m in Sources */ = {isa = PBXBuildFile; fileRef = D9ADB1811A7A11490067E689 /* GAFeedService.m */; };
 		D9ADB1851A7A11E00067E689 /* GAQueueService.m in Sources */ = {isa = PBXBuildFile; fileRef = D9ADB1841A7A11E00067E689 /* GAQueueService.m */; };
 		D9AF49D61A79FEC9009BA3C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AF49D51A79FEC9009BA3C2 /* main.m */; };
@@ -35,6 +37,9 @@
 
 /* Begin PBXFileReference section */
 		35FB28A9DE0D4A8A8D5BA1A7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D90060CA1A7A5950009AB89C /* GAWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAWebViewController.h; path = Controllers/GAWebViewController.h; sourceTree = "<group>"; };
+		D90060CB1A7A5950009AB89C /* GAWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAWebViewController.m; path = Controllers/GAWebViewController.m; sourceTree = "<group>"; };
+		D90060CC1A7A5950009AB89C /* GAWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GAWebViewController.xib; path = Controllers/GAWebViewController.xib; sourceTree = "<group>"; };
 		D9ADB1801A7A11490067E689 /* GAFeedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAFeedService.h; path = Services/GAFeedService.h; sourceTree = "<group>"; };
 		D9ADB1811A7A11490067E689 /* GAFeedService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAFeedService.m; path = Services/GAFeedService.m; sourceTree = "<group>"; };
 		D9ADB1831A7A11E00067E689 /* GAQueueService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAQueueService.h; path = Services/GAQueueService.h; sourceTree = "<group>"; };
@@ -173,6 +178,8 @@
 				D9AF49FA1A7A002E009BA3C2 /* GARSSTableViewDataSource.m */,
 				D9AF49FC1A7A00F5009BA3C2 /* GARSSTableViewCell.h */,
 				D9AF49FD1A7A00F5009BA3C2 /* GARSSTableViewCell.m */,
+				D90060CA1A7A5950009AB89C /* GAWebViewController.h */,
+				D90060CB1A7A5950009AB89C /* GAWebViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +187,7 @@
 		D9AF4A011A7A0167009BA3C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D90060CC1A7A5950009AB89C /* GAWebViewController.xib */,
 				D9AF49F61A79FF57009BA3C2 /* GAMainViewController.xib */,
 				D9AF49FE1A7A00F5009BA3C2 /* GARSSTableViewCell.xib */,
 			);
@@ -281,6 +289,7 @@
 				D9AF49DB1A79FEC9009BA3C2 /* Images.xcassets in Resources */,
 				D9AF4A001A7A00F5009BA3C2 /* GARSSTableViewCell.xib in Resources */,
 				D9AF49F81A79FF57009BA3C2 /* GAMainViewController.xib in Resources */,
+				D90060CE1A7A5950009AB89C /* GAWebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +342,7 @@
 			files = (
 				D9AF49D91A79FEC9009BA3C2 /* AppDelegate.m in Sources */,
 				D9ADB1851A7A11E00067E689 /* GAQueueService.m in Sources */,
+				D90060CD1A7A5950009AB89C /* GAWebViewController.m in Sources */,
 				D9AF49F71A79FF57009BA3C2 /* GAMainViewController.m in Sources */,
 				D9AF49D61A79FEC9009BA3C2 /* main.m in Sources */,
 				D9AF4A051A7A05BE009BA3C2 /* GAFeed.m in Sources */,

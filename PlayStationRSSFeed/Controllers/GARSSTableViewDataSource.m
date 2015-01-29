@@ -26,8 +26,15 @@
     GAFeed *feed = self.items[indexPath.row];
     cell.titleLabel.text = feed.title;
     cell.descriptionLabel.text = feed.feedContent;
+    cell.newsLink = feed.newsLink;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    GARSSTableViewCell *cell = (GARSSTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
+    [self.delegate openUrlRequest:cell.newsLink];
 }
 
 @end
